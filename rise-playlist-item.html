@@ -1,4 +1,19 @@
 <link rel="import" href="../polymer/polymer.html">
 
-<polymer-element name="rise-playlist-item" attributes="duration" noscript>
+<polymer-element name="rise-playlist-item" attributes="duration">
+
+ <script>
+    /* global Polymer */
+    /*jshint newcap: false */
+    Polymer("rise-playlist-item", {
+      /**
+       * The number of seconds that the playlist item will be shown for.
+       *
+       * @attribute duration
+       * @type number
+       * @default 0
+       */
+      duration: 0
+    });
+  </script>
 </polymer-element>
