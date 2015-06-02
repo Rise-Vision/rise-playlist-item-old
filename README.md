@@ -15,12 +15,12 @@ bower install https://github.com/Rise-Vision/web-component-rise-playlist.git
 bower install https://github.com/Rise-Vision/web-component-rise-playlist-item.git
 ```
 
-Next, construct your HTML page. You should include `webcomponents.js` before any code that touches the DOM, and load the web components using HTML imports. For example:
+Next, construct your HTML page. You should include `webcomponents-lite.min.js` before any code that touches the DOM, and load the web components using HTML imports. For example:
 ```
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="bower_components/rise-playlist/rise-playlist.html">
     <link rel="import" href="bower_components/rise-playlist-item/rise-playlist-item.html">
   </head>
@@ -70,7 +70,7 @@ bower install
 ```
 
 ### Run Locally
-You can access the `demo.html` file via a local web server. On Mac, execute the following command from the root directory of the web component:
+You can access the `demo.html` file via a local web server. On Mac, execute the following command in Terminal from *one directory level above where the web component resides*:
 ```
 python -m SimpleHTTPServer
 ```
