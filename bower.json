@@ -11,7 +11,7 @@
     "web-components"
   ],
   "license": "GPLv3",
-  "homepage": "https://github.com/Rise-Vision/web-component-rise-playlist-item",
+  "homepage": "https://github.com/Rise-Vision/rise-playlist-item",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -19,13 +19,11 @@
     "test"
   ],
   "dependencies": {
-    "polymer": "^1.0.0"
+    "polymer": "#^1.0.0",
+    "rise-page": "https://github.com/Rise-Vision/rise-page.git",
+    "rise-playlist": "https://github.com/Rise-Vision/rise-playlist.git#1.0.0"
   },
   "devDependencies": {
-    "rise-playlist": "https://github.com/Rise-Vision/web-component-rise-playlist.git"
-  },
-  "resolutions": {
-    "polymer": "^1.0.0",
-    "webcomponentsjs": "^0.7.2"
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
   }
 }
