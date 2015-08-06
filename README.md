@@ -1,19 +1,20 @@
 # Rise Playlist Item Web Component
 
 ## Introduction
-`rise-playlist-item` is a web component that functions as a container for a piece of content in an HTML page. It is intended to be nested inside of a [`rise-playlist`](https://github.com/Rise-Vision/web-component-rise-playlist) component.
-
-`rise-playlist-item` works in conjunction with [Rise Vision](http://www.risevision.com), the [digital signage management application](http://rva.risevision.com/) that runs on [Google Cloud](https://cloud.google.com).
+`rise-playlist-item` is a Polymer Web Component that works with [Rise Vision](https://www.risevision.com/), the digital signage management application for [Web Designers](http://risevision.com/web-designers). It functions as a container for a piece of content on an HTML page, and surfaces a `duration` attribute to indicate how long that content should be shown for.
 
 At this time Chrome is the only browser that this project and Rise Vision supports.
 
 ## Usage
-To begin, you will need to install `rise-playlist` and `rise-playlist-item` using Bower:
+To begin, you will need to install the following components using Bower:
 
 ```
-bower install https://github.com/Rise-Vision/web-component-rise-playlist.git
-bower install https://github.com/Rise-Vision/web-component-rise-playlist-item.git
+bower install https://github.com/Rise-Vision/rise-page.git
+bower install https://github.com/Rise-Vision/rise-playlist.git
+bower install https://github.com/Rise-Vision/rise-playlist-item.git
 ```
+
+The above repositories, as well as their dependencies, are installed in the `bower_components` folder.
 
 Next, construct your HTML page. You should include `webcomponents-lite.min.js` before any code that touches the DOM, and load the web components using HTML imports. For example:
 ```
@@ -21,21 +22,24 @@ Next, construct your HTML page. You should include `webcomponents-lite.min.js` b
 <html>
   <head>
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/rise-page/rise-page.html">
     <link rel="import" href="bower_components/rise-playlist/rise-playlist.html">
     <link rel="import" href="bower_components/rise-playlist-item/rise-playlist-item.html">
   </head>
   <body>
-    <rise-playlist>
-      <rise-playlist-item duration="5"></rise-playlist-item>
-    </rise-playlist>
+    <rise-page id="page" display-id="your-display-id">
+      <rise-playlist id="playlist">
+        <rise-playlist-item duration="3">
+          <!-- Content components go here -->
+        </rise-playlist-item>
+      </rise-playlist>
+    </rise-page>
   </body>
 </html>
 ```
 
-### Attributes
-| Attribute             | Type                                                                       | Default               |
-| --------------------- | -------------------------------------------------------------------------- | --------------------- |
-| `duration` (optional) | `<number>` The number of seconds that the playlist item will be shown for. | `0` (play until done) |
+## Documentation
+For further documentation on `rise-playlist-item` properties, methods, usage, and a comprehensive demo, please see [here](http://rise-vision.github.io/rise-playlist-item).
 
 ## Built With
 - [Polymer](https://www.polymer-project.org/)
@@ -66,8 +70,8 @@ To make changes to the web component, you'll first need to install the dependenc
 
 The web component can now be installed by executing the following commands in Terminal:
 ```
-git clone https://github.com/Rise-Vision/web-component-rise-playlist-item.git
-cd web-component-rise-playlist-item
+git clone https://github.com/Rise-Vision/rise-playlist-item.git
+cd rise-playlist-item
 npm install
 bower install
 ```
@@ -77,10 +81,8 @@ To access the demo locally, run the `polyserve` command in Terminal.
 
 In your browser, navigate to:
 ```
-localhost:8080/components/rise-playlist-item/demo.html
+http://localhost:8080/components/rise-playlist-item/demo/
 ```
-
-Note that the demo page does not have a UI and will consequently display a blank page.
 
 ### Deployment
 Once you are satisifed with your changes, deploy `rise-playlist-item.html` and the `polymer` and `webcomponentsjs` folders to your server. You can then use the web component by following the *Usage* instructions above.
