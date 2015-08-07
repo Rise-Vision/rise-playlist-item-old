@@ -4,7 +4,7 @@
   "authors": [
     "Rise Vision"
   ],
-  "description": "Rise playlist item web component",
+  "description": "Rise Playlist Item Web Component",
   "main": "rise-playlist-item.html",
   "keywords": [
     "polymer",
@@ -19,11 +19,11 @@
     "test"
   ],
   "dependencies": {
-    "polymer": "#^1.0.0",
-    "rise-page": "https://github.com/Rise-Vision/rise-page.git",
-    "rise-playlist": "https://github.com/Rise-Vision/rise-playlist.git#1.0.0"
+    "polymer": "#^1.0.0"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "rise-page": "https://github.com/Rise-Vision/rise-page.git#1.0.1",
+    "rise-playlist": "https://github.com/Rise-Vision/rise-playlist.git#1.0.1"
   }
 }

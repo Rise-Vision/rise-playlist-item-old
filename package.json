@@ -1,7 +1,7 @@
 {
   "name": "rise-playlist-item",
   "version": "1.0.2",
-  "description": "The Rise playlist item web component functions as a container for a piece of content in an HTML page.",
+  "description": "The Rise Playlist Item web component functions as a container for a piece of content in an HTML page.",
   "directories": {
     "test": "test"
   },
