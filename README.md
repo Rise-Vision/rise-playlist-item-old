@@ -1,7 +1,7 @@
 # Rise Playlist Item Web Component
 
 ## Introduction
-`rise-playlist-item` is a Polymer Web Component that works with [Rise Vision](https://www.risevision.com/), the digital signage management application for [Web Designers](http://risevision.com/web-designers). It functions as a container for a piece of content on an HTML page, and surfaces a `duration` attribute to indicate how long that content should be shown for.
+`rise-playlist-item` is a Polymer Web Component that works with [Rise Vision](https://www.risevision.com/), the digital signage management application for [Web Designers](http://risevision.com/web-designers). It serves as a container for content in an HTML page, and surfaces a `duration` attribute to indicate how long that content should be shown for.
 
 At this time Chrome is the only browser that this project and Rise Vision supports.
 
@@ -37,6 +37,8 @@ Next, construct your HTML page. You should include `webcomponents-lite.min.js` b
   </body>
 </html>
 ```
+
+*Note:* All playlist and content elements must be assigned a unique `id` attribute.
 
 ## Documentation
 For further documentation on `rise-playlist-item` properties, methods, usage, and a comprehensive demo, please see [here](http://rise-vision.github.io/rise-playlist-item).
@@ -110,9 +112,9 @@ All contributions are greatly appreciated and welcome! If you would first like t
 ## Resources
 If you have any questions or problems, please don't hesitate to join our lively and responsive community at http://community.risevision.com.
 
-If you are looking for user documentation on Rise Vision, please see http://www.risevision.com/help/users/
+If you are looking for user documentation on Rise Vision, please see https://help.risevision.com/user.
 
-If you would like more information on developing applications for Rise Vision, please visit http://www.risevision.com/help/developers/.
+If you would like more information on developing applications for Rise Vision, please visit https://help.risevision.com/developer.
 
 **Facilitator**
 
