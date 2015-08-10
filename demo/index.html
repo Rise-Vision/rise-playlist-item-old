@@ -6,10 +6,10 @@
 
   <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
 
-  <link rel="import" href="demo-component.html">
-  <link rel="import" href="../rise-playlist-item.html">
   <link rel="import" href="../../rise-page/rise-page.html">
   <link rel="import" href="../../rise-playlist/rise-playlist.html">
+  <link rel="import" href="../rise-playlist-item.html">
+  <link rel="import" href="demo-component.html">
 
 </head>
 <body>
@@ -26,5 +26,15 @@
 
     </rise-playlist>
   </rise-page>
+
+  <script>
+    window.addEventListener("WebComponentsReady", function() {
+      var components = document.getElementsByTagName("demo-component");
+
+      for (var i = 0; i < components.length; i++) {
+        components[i].onReady();
+      }
+    });
+  </script>
 </body>
 </html>
