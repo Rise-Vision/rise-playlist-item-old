@@ -1,0 +1,42 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`rise-playlist-item` is a Polymer Web Component that works with <a href="https://www.risevision.com/">Rise Vision</a>, the digital signage management application for <a href="http://risevision.com/web-designers">Web Designers</a>. It serves as a container for content in an HTML page, and surfaces a `duration` attribute to indicate how long that content should be shown for.
+
+### Example Usage
+
+      <rise-page id="page" display-id="your-display-id">
+        <rise-playlist id="playlist">
+          <rise-playlist-item duration="3">
+            <demo-component id="apple" src="https://url.to.apple.png"></demo-component>
+          </rise-playlist-item>
+        </rise-playlist>
+      </rise-page>
+
+@demo demo/
+-->
+
+<dom-module id="rise-playlist-item">
+</dom-module>
+
+<script>
+  /* global Polymer, _ */
+  /* jshint newcap: false */
+</script>
+
+<script>
+  Polymer({
+    is: "rise-playlist-item",
+
+    properties: {
+      /**
+       * The number of seconds that the playlist item will be shown for.
+       * A value of 0 indicates that the item should play until done.
+       */
+      duration: {
+        type: Number,
+        value: 0
+      }
+    }
+  });
+</script>

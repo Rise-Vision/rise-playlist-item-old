@@ -1,0 +1,29 @@
+{
+  "name": "rise-playlist-item",
+  "version": "1.0.2",
+  "authors": [
+    "Rise Vision"
+  ],
+  "description": "Rise Playlist Item Web Component",
+  "main": "rise-playlist-item.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/Rise-Vision/rise-playlist-item",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test"
+  ],
+  "dependencies": {
+    "polymer": "#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "rise-page": "https://github.com/Rise-Vision/rise-page.git#1.0.1",
+    "rise-playlist": "https://github.com/Rise-Vision/rise-playlist.git#1.0.1"
+  }
+}
